@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block title %}DCD{% endblock %} {% block content
+    %}
+    <h1 align="center">Search Results</h1>
+    <div class="content">        
+        {% for item in items %}
+        <div class="directory">
+            <p align="center"><b>#{{ item.id }}: {{ item.section }}-{{ item.lot }}</b></p>
+            <b><u>
+                <p align="center" class="name">{{ item.first_name }} {{item.middle_name}} {{ item.last_name }}</p>
+            </u></b>
+            <b>
+                <p align="center">{{ item.date_of_birth }} ~ {{item.date_of_death}}</p>
+            </b>
+            {% if item.reserved == 1 %}
+             <p align="center"><b>Reserved</b></p>
+            {% else %}
+            {% endif %}
+            <p>{{ item.phone_number }}</p>
+            <p>{{ item.address }}</p>                  
+            {% if item.date_of_death != env or item.reserved|int == 1 %}
+             <div class="not-available">
+                <p align="center">Not Available</p>
+             </div>
+            {% else %}
+             <div class="available">
+                <p align="center">Available</p>
+             </div>          
+            {% endif %}
+            <div class="notes">
+                <h6>Notes:</h6>
+                <p>{{ item.notes }}</p>
+
+            </div>
+            <a href="{{ url_for('views.update', id=item.id) }}">Edit</a>
+        </div>
+        {% endfor %}  
+    {% endblock %}

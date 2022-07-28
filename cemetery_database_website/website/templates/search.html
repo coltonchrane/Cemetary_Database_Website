@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}DCD{% endblock %} {% block content%}
+    <h1 align="center">DCD Search</h1>
+    <div class="content">
+        <form method="POST">
+            <p>
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name">
+                </input>
+            </p>
+            <p>
+                <button type="search">Search</button>
+            </p>
+        </form>
+        {% endblock %}
+       

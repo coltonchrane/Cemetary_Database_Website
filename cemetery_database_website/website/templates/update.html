@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="width: 100%">
+        {% block title %} Update {{ item.section }} - {{ item.lot }}
+        {% endblock %}
+    </h1>
+    <form method="POST">
+        <p>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name"
+                   value={{ item.first_name }}>
+            </input>
+        </p>
+        
+        <p>
+            <label for="middle_name">Middle Name</label>
+            <input type="text" name="middle_name"
+                   value={{ item.middle_name }}>
+            </input>
+        </p>
+
+        <p>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name"
+                   value={{ item.last_name }}>
+            </input>
+        </p>
+
+        <p>
+            <label for="date_of_birth">Date of Birth (MM-DD-YYYY)</label>
+            <input type="text" name="date_of_birth"
+                   value={{ item.date_of_birth }}>
+            </input>
+        </p>
+        
+        <p>
+            <label for="date_of_death">Date of Death (MM-DD-YYYY)</label>
+            <input type="text" name="date_of_death"
+                   value={{ item.date_of_death }}>
+            </input>
+        </p>
+
+        <p>
+            <label for="phone_number">Phone Number</label>
+            <input type="text" name="phone_number"
+                   value={{ item.phone_number }}>
+            </input>
+        </p>
+
+        <p>
+            <label for="address">Address</label>
+            <input type="text" name="address"
+                   value={{ item.address }}>
+            </input>
+        </p>
+        {% if item.reserved |int == 1 %}
+         <p>
+            <label for="reserved">Reserved</label>
+            <input type="checkbox" name="reserved" 
+                    value = 1 checked= 1>
+            </input>
+         </p>
+        {% else %}
+         <p>
+            <label for="reserved">Reserved</label>
+            <input type="checkbox" name="reserved" 
+                    value = 1>
+            </input>
+         </p>
+        {% endif %}
+        <p>
+        <label for="notes">Notes</label>
+        <br>
+        <textarea name="notes"
+                  placeholder="Notes"
+                  rows="15"
+                  cols="60"
+                  >{{ item.notes }}</textarea>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}
