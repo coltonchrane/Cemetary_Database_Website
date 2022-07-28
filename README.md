@@ -1,4 +1,4 @@
-# Cemetery_Database_Website
+# Cemetery Database Website
 ### Flask site developed for a cemetery needing records transferred from an old binder with handwritten entries into a full functioning database with interactivity.
 
   **This project is for my portfolio and the client is aware I am posting the code and all personal data/link names have been removed for there privacy.** 
@@ -24,7 +24,7 @@ the sign up is only accesible by URL that is intentional).
   
   ![Update](/DudleyCemetary-screenshots/update.png)
 
-  The search function is very minimal and basic at the clients request future updates will look to expand search capabilities utilizing dynamic drop downs for section and lot. This pulls up another page with the same formatting as the directory with any search that matcehs the last name types in.
+  The search function is very minimal and basic at the clients request future updates will look to expand search capabilities utilizing dynamic drop downs for section and lot. This pulls up another page with the same formatting as the directory with any search that matches the last name typed in.
 
  ![Search Results](/DudleyCemetary-screenshots/search-results.png)
 
