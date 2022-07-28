@@ -26,7 +26,7 @@ the sign up is only accesible by URL that is intentional).
 
   The search function is very minimal and basic at the clients request future updates will look to expand search capabilities utilizing dynamic drop downs for section and lot. This pulls up another page with the same formatting as the directory with any search that matcehs the last name types in.
 
-  ![Search Results](/DudleyCemetary-screenshots/search.png)
+
 
   Finally the export report allows a user to export the current image of the cemetery's directory from the database into a formatted 
 report. This was also at the clients request to be able to keep a physical back up and onboarding new memebr of the cemetery's board.
