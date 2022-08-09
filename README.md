@@ -10,7 +10,7 @@ the sign up is only accesible by URL that is intentional).
   
   ![Registration Page](/DudleyCemetary-screenshots/sign-up.png)
 
-  After logging in the main directory displays every plot in the cemetary with information about the plot.
+  After logging in the main directory displays every plot in the cemetary with information about the plot. Note the the export report button which allows a user to export the a formatted report of the database table of the cemetery's directory. This was at the clients request to be able to keep a physical back up and for onboarding new members of the cemetery's board.
 
   ![Home](/DudleyCemetary-screenshots/home.png)
 
@@ -27,8 +27,5 @@ the sign up is only accesible by URL that is intentional).
   The search function is very minimal and basic at the clients request future updates will look to expand search capabilities utilizing dynamic drop downs for section and lot. This pulls up another page with the same formatting as the directory with any search that matches the last name typed in.
 
  ![Search Results](/DudleyCemetary-screenshots/search-results.png)
-
-  Finally the export report allows a user to export the current image of the cemetery's directory from the database into a formatted 
-report. This was also at the clients request to be able to keep a physical back up and onboarding new memebr of the cemetery's board.
 
 ***If you are interested in using this template I would recomend making an account through the sign-up portal before adding in the database. This is because I deleted the orginal database file from this project and there is no way to add/delete cemetary plots in the application, because they are fixed locations. So you may have issues loading in the database through sql commands before the program actually creates the file you need. (See __init__.py)***
