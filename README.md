@@ -30,3 +30,5 @@ the sign up is only accesible by URL that is intentional).
 
   Finally the export report allows a user to export the current image of the cemetery's directory from the database into a formatted 
 report. This was also at the clients request to be able to keep a physical back up and onboarding new memebr of the cemetery's board.
+
+***If you are interested in using this template I would recomend making an account through the signup feature before adding in the database. This is because I deleted the orginal database file from this project so you may have issues loading in the database through sql before the program actually creates te file you need (See __init__.py)***
