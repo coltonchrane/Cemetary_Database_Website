@@ -1,5 +1,5 @@
 # Cemetery Database Website
-### Flask site developed for a cemetery needing records transferred from an old binder with handwritten entries into a full functioning database with interactivity.
+### Flask site template. Original site was developed for a cemetery needing records transferred from an old binder with handwritten entries into a full functioning database with interactivity.
 
   **This project is for my portfolio and the client is aware I am posting the code and all personal data/link names have been removed for there privacy.** 
   
